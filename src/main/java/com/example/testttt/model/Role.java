@@ -2,5 +2,5 @@ package com.example.testttt.model;
 
 public enum Role {
 
-    ADMIN, USER
+    STUDENT, HOD, LECTURER
 }

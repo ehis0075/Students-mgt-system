@@ -10,9 +10,9 @@ CREATE SCHEMA IF NOT EXISTS `testttt` DEFAULT CHARACTER SET latin1 ;
 -- -----------------------------------------------------
 -- Table `student`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `testttt`.`student` ;
+DROP TABLE IF EXISTS `testttt`.`app_user` ;
 
-CREATE TABLE IF NOT EXISTS `testttt`.`student` (
+CREATE TABLE IF NOT EXISTS `testttt`.`app_user` (
                                                     `id` INT(11) NOT NULL,
                                                     `username` VARCHAR(20) NULL DEFAULT NULL,
                                                     `password` VARCHAR(100) NULL DEFAULT NULL,

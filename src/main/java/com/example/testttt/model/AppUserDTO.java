@@ -1,5 +1,6 @@
 package com.example.testttt.model;
 
+import com.example.testttt.model.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,7 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class StudentDTO {
+public class AppUserDTO {
 
     private String username;
 

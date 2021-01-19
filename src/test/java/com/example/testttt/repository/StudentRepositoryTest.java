@@ -1,7 +1,7 @@
 package com.example.testttt.repository;
 
 import com.example.testttt.model.Role;
-import com.example.testttt.model.Student;
+import com.example.testttt.model.AppUser;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -9,10 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.Optional;
-
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 
 @Slf4j
@@ -20,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class StudentRepositoryTest {
 
     @Autowired
-    private StudentRepository studentRepository;
+    private AppUserRepository studentRepository;
 
     @BeforeEach
     void setUp() {
@@ -33,10 +30,10 @@ class StudentRepositoryTest {
 
     @Test
     void save() {
-        Student user = new Student();
-        user.setUsername("kel");
-        user.setPassword("kel");
-        user.setRole(Role.USER);
+        AppUser user = new AppUser();
+        user.setUsername("tobi");
+        user.setPassword("tobi");
+        user.setRole(Role.LECTURER);
 
         studentRepository.save(user);
 
